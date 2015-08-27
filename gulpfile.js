@@ -20,13 +20,14 @@ gulp.task('views', function () {
 
 gulp.task('usemin', function() {
 
-    return gulp.src('src/.html')
+    return gulp.src('src/*.html')
         .pipe(usemin({
             css: [minifyCss({
                 advanced: false
-            }), 'concat', rev()],
+            }), 'concat'],
             html: [minifyHtml({empty: true})],
-            js: [uglify(), rev()],
+//            js: [uglify(), rev()],
+            js: [uglify()],
             inlinejs: [uglify()],
             inlinecss: [minifyCss(), 'concat'],
         }))
