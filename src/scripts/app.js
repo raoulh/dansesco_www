@@ -1,7 +1,6 @@
 'use strict';
 
 angular.module('dansesCoApp', [
-    'ngAnimate',
     'ngSanitize',
     'ui.router'
 ])

@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     rev = require('gulp-rev'),
     concat = require('gulp-concat'),
     opn = require('opn'),
+    ngAnnotate = require('gulp-ng-annotate'),
     del = require('del');
 
 gulp.task('views', function () {
@@ -26,8 +27,8 @@ gulp.task('usemin', function() {
                 advanced: false
             }), 'concat'],
             html: [minifyHtml({empty: true})],
-//            js: [uglify(), rev()],
-            js: [uglify()],
+//            js: [uglify({mangle: false})],
+            js: [ngAnnotate(), uglify()],
             inlinejs: [uglify()],
             inlinecss: [minifyCss(), 'concat'],
         }))
