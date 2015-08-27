@@ -18,8 +18,20 @@ angular.module('dansesCoApp', [
         templateUrl: 'views/about.html'
     })
     .state('courses', {
-        url: '/courses',
+        url: '/cours',
         templateUrl: 'views/courses.html'
+    })
+    .state('courses.std', {
+        url: '/cours/standard',
+        templateUrl: 'views/danses_std.html'
+    })
+    .state('courses.latines', {
+        url: '/cours/latines',
+        templateUrl: 'views/danses_latines.html'
+    })
+    .state('courses.zumba', {
+        url: '/cours/zumba',
+        templateUrl: 'views/danses_zumba.html'
     })
     .state('news', {
         url: '/news',
