@@ -1,5 +1,5 @@
 <div id="schedules" class="animate">
-    <div id="main" ui-view class="animate">
+    <div id="main" ui-view class="animate" autoscroll="autoscroll">
         <div class="frame2">
             <img src="images/stretching.jpg" alt="Img">
         </div>
@@ -34,6 +34,9 @@
                     <li ng-class="{selected: $state.includes('courses.zumba')}">
                         <a ui-sref="courses.zumba">Zumba</a>
                     </li>
+                    <li ng-class="{selected: $state.includes('courses.particulier')}">
+                        <a ui-sref="courses.particulier">Cours particulier</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -49,7 +52,7 @@
                             </p>
                         </li>
                         <li>
-                            <span>Phone:</span>
+                            <span>Téléphone:</span>
                             <p>
                                 (+33) 7 83 93 68 09
                             </p>
@@ -57,7 +60,7 @@
                         <li>
                             <span>Email:</span>
                             <p>
-                                contact @ danses-co.fr
+                                <a href="contact  _AT_  danses-co.fr" rel="nofollow" onclick="this.href='mailto:' + 'contact' + '@' + 'danses-co.fr'">contact @ danses-co.fr</a>
                             </p>
                         </li>
                     </ul>

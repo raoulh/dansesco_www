@@ -33,6 +33,10 @@ angular.module('dansesCoApp', [
         url: '/cours/zumba',
         templateUrl: 'views/danses_zumba.html'
     })
+    .state('courses.particulier', {
+        url: '/cours/particulier',
+        templateUrl: 'views/danses_particulier.html'
+    })
     .state('news', {
         url: '/news',
         templateUrl: 'views/news.html'
