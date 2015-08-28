@@ -92,7 +92,9 @@ angular.module('dansesCoApp')
     $scope.agendaPrevious = function () {
         if (currentSchedule <= 0)
             return;
-        currentSchedule--;
+        currentSchedule -= 5;
+        if (currentSchedule <= 0)
+            currentSchedule = 0;
         $scope.down_anim = true;
         $scope.up_anim = false;
         updateDisplaySchedules(currentSchedule);
@@ -101,7 +103,9 @@ angular.module('dansesCoApp')
     $scope.agendaNext = function () {
         if (currentSchedule + 5 > $scope.schedulesAll.length)
             return;
-        currentSchedule++;
+        currentSchedule += 5;
+        if (currentSchedule + 5 >= $scope.schedulesAll.length)
+            currentSchedule = $scope.schedulesAll.length - 5;
         $scope.down_anim = false;
         $scope.up_anim = true;
         updateDisplaySchedules(currentSchedule);
