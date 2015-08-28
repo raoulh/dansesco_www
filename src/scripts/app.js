@@ -45,6 +45,10 @@ angular.module('dansesCoApp', [
         url: '/contact',
         templateUrl: 'views/contact.html'
     })
+    .state('ffd', {
+        url: '/ffd',
+        templateUrl: 'views/ffd.html'
+    })
 })
 .run(function($rootScope, $state) {
     $rootScope.$state = $state;

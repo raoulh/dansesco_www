@@ -27,10 +27,13 @@
                     <li ng-class="{selected: $state.includes('about')}">
                         <a ui-sref="about">L'association</a>
                     </li>
+                    <li ng-class="{selected: $state.includes('ffd')}">
+                        <a ui-sref="ffd">FFD</a>
+                    </li>
                     <li ng-class="{selected: $state.includes('courses')}">
                         <a ui-sref="courses">Les Cours</a>
                     </li>
-                    <li ng-class="{selected: $state.includes('news')}">
+                    <li ng-class="{selected: $state.includes('news')}" ng-show="hide_for_now">
                         <a ui-sref="news">News</a>
                     </li>
                     <li ng-class="{selected: $state.includes('contact')}">
@@ -61,10 +64,13 @@
                             <a ui-sref="about">L'association</a>
                         </li>
                         <li>
+                            <a ui-sref="ffd">FFD</a>
+                        </li>
+                        <li>
                             <a ui-sref="courses">Les Cours</a>
                         </li>
                         <li>
-                            <a ui-sref="news">News</a>
+                            <a ui-sref="news" ng-show="hide_for_now">News</a>
                         </li>
                         <li>
                             <a ui-sref="contact">Contact</a>

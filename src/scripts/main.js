@@ -110,4 +110,8 @@ angular.module('dansesCoApp')
         $scope.up_anim = true;
         updateDisplaySchedules(currentSchedule);
     };
+
+    $scope.sendRequest = function () {
+        $window.alert("Ce formulaire n'est pas encore en fonction, envoyez nous un email! Merci.");
+    }
 });
