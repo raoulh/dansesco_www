@@ -1,0 +1,88 @@
+{
+    "trimestre_1": {
+        "begin": "2015-09-01",
+        "end": "2015-12-31"
+    },
+    "trimestre_2": {
+        "begin": "2016-01-01",
+        "end": "2016-04-2"
+    },
+    "trimestre_3": {
+        "begin": "2016-04-03",
+        "end": "2016-06-31"
+    },
+    "season_schedule": [
+        {
+            "date": "2015-09-07T18:00+0100",
+            "cours": "portes_ouverte",
+            "duration": "02:00",
+            "free": true
+        },
+
+        {
+            "date": "2015-09-14T18:00+0100",
+            "cours": "std1",
+            "duration": "01:00",
+            "free": true
+        },
+        {
+            "date": "2015-09-14T19:00+0100",
+            "cours": "std2",
+            "duration": "01:00",
+            "free": true
+        },
+
+        {
+            "date": "2015-09-15T18:00+0100",
+            "cours": "latin1",
+            "duration": "01:00",
+            "free": true
+        },
+        {
+            "date": "2015-09-15T19:00+0100",
+            "cours": "latin2",
+            "duration": "01:00",
+            "free": true
+        },
+
+        {
+            "date": "2015-09-18T18:00+0100",
+            "cours": "zumba",
+            "duration": "01:00",
+            "free": true
+        },
+
+        {
+            "date": "2015-09-21T18:00+0100",
+            "cours": "std1",
+            "duration": "01:00",
+            "free": false
+        },
+        {
+            "date": "2015-09-21T19:00+0100",
+            "cours": "std2",
+            "duration": "01:00",
+            "free": false
+        },
+
+        {
+            "date": "2015-09-22T18:00+0100",
+            "cours": "latin1",
+            "duration": "01:00",
+            "free": false
+        },
+        {
+            "date": "2015-09-22T19:00+0100",
+            "cours": "latin2",
+            "duration": "01:00",
+            "free": false
+        },
+
+        {
+            "date": "2015-09-25T18:00+0100",
+            "cours": "zumba",
+            "duration": "01:00",
+            "free": false
+        }
+    ]
+}

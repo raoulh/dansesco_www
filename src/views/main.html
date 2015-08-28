@@ -55,22 +55,16 @@
 
     <div id="schedule">
         <h3>Planing des prochains cours</h3>
+        <div class="button faa-parent animated-hover" ng-click="agendaPrevious()" ng-show="previousButton">
+            <i class="fa fa-chevron-up faa-float faa-fast"></i>
+        </div>
         <ul>
-            <li>
-                <span class="time">07/09/2015 19h-20h</span> <a ui-sref="courses.std">Cours danses standards</a><br>Niveau débutant
-            </li>
-            <li>
-                <span class="time">07/09/2015 20h-21h</span> <a ui-sref="courses.std">Cours danses standards</a><br>niveau avancé
-            </li>
-            <li>
-                <span class="time">08/09/2015 19h-20h</span> <a ui-sref="courses.latines">Cours danses latines</a><br>niveau débutant
-            </li>
-            <li>
-                <span class="time">08/09/2015 20h-21h</span> <a ui-sref="courses.latines">Cours danses latines</a><br>niveau avancé
-            </li>
-            <li>
-                <span class="time">11/09/2015 19h-20h</span> <a ui-sref="courses.zumba">Cours de Zumba</a><br>tout niveau
+            <li ng-repeat="sched in schedules" ng-class="{schedule_anim_down: down_anim, schedule_anim_up: up_anim}">
+                <span class="time">{{sched.dateFormated}} {{sched.hourBegin}}-{{sched.hourEnd}}</span> <a href="#" ng-click="stateGo(sched.uri)">{{sched.cours}}</a> <strong ng-show="sched.free">GRATUIT</strong><br>{{sched.level}}
             </li>
         </ul>
+        <div class="button faa-parent animated-hover" ng-click="agendaNext()" ng-show="nextButton">
+            <i class="fa fa-chevron-down faa-float faa-fast"></i>
+        </div>
     </div>
 </div>
