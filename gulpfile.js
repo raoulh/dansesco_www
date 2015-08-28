@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     opn = require('opn'),
     ngAnnotate = require('gulp-ng-annotate'),
+    jsonminify = require('gulp-jsonminify')
     del = require('del');
 
 gulp.task('views', function () {
@@ -50,6 +51,7 @@ gulp.task('fonts', function () {
 
 gulp.task('static', function () {
     return gulp.src('src/data.json')
+        .pipe(jsonminify())
         .pipe(gulp.dest('dist'));
 });
 
