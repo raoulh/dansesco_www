@@ -9,6 +9,8 @@
     "angular-ui-router": "^0.2.15",
     "font-awesome": "~4.4.0",
     "font-awesome-animation": "~0.0.6",
+    "jquery": "~2.1.4",
+    "magnific-popup": "~1.0.0",
     "moment": "~2.10.6"
   }
 }
