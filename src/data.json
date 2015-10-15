@@ -178,13 +178,6 @@
         },
 
         {
-            "date": "2015-10-16T18:00+0100",
-            "cours": "zumba",
-            "duration": "01:00",
-            "free": false
-        },
-
-        {
             "date": "2015-11-02T18:00+0100",
             "cours": "std1",
             "duration": "01:00",
