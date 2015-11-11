@@ -43,6 +43,7 @@ img {
 }
 .frame1, .frame2, .frame3 {
 	background: url(../images/frames.png) no-repeat;
+	text-align: center;
 }
 .video1, .video2, .video3 {
 	background: url(../images/frame-videos.png) no-repeat;
