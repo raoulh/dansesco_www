@@ -42,6 +42,9 @@ angular.module('dansesCoApp')
 
             var sched = $scope.schedulesAll[i];
             var cur = moment(sched['date']);
+            if (!cur.isDST()) {
+                cur.add(1, 'h');
+            }
 
             var item = {
                 dateFormated: cur.format('DD/MM/YYYY'),
