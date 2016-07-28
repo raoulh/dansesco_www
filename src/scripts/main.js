@@ -13,6 +13,14 @@ angular.module('dansesCoApp')
 
         $scope.schedulesAll = res.data.season_schedule;
 
+/*		
+		$scope.schedulesAll.sort(function (a, b) {
+			var r = moment(a['date']).isBefore(moment(b['date']));
+			console.log(a['date'] + " is before " + b['date'] + " ---> " + r);
+			return moment(a['date']).isBefore(moment(b['date']));
+		});
+*/
+
         //var now = moment('2015-09-21T18:00+0100');
         var now = moment();
 
@@ -21,7 +29,7 @@ angular.module('dansesCoApp')
             var sched = $scope.schedulesAll[i];
             var cur = moment(sched['date']);
 
-            if (now < cur) {
+            if (now.isBefore(cur)) {
                 currentSchedule = i;
                 break;
             }
